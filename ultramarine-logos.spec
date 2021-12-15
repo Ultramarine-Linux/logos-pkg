@@ -3,9 +3,9 @@
 Name: ultramarine-logos
 %define _alt_name fedora-logos
 Summary: Icons and pictures related to Ultramarine Linux
-Version: 34.0.4
+Version: 35
 %define _release 2%{?dist}
-Release: %{_release}.3
+Release: %autorelease
 URL: https://gitlab.ultramarine-linux.org/design/logos
 Source0: https://gitlab.ultramarine-linux.org/design/logos/-/archive/lapis/logos-lapis.tar.gz
 Source1: distributor-logo-ultramarine-flat.svg
@@ -16,6 +16,7 @@ Provides: system-logos = %{version}-%{_release}
 Provides: %{_alt_name} = %{version}-%{_release}
 BuildArch: noarch
 BuildRequires: hardlink
+Requires: ultramarine-release = %{version}
  
 %if ! 0%{?eln}
 # For _kde4_* macros:
