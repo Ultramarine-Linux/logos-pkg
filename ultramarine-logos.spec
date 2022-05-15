@@ -7,7 +7,7 @@ Version: 36
 %define _release 2%{?dist}
 Release: %autorelease
 URL: https://gitlab.ultramarine-linux.org/design/logos
-Source0: https://gitlab.ultramarine-linux.org/design/logos/-/archive/lapis/logos-lapis.tar.gz
+Source0: https://github.com/Ultramarine-Linux/logos/archive/refs/heads/lapis.tar.gz
 Source1: distributor-logo-ultramarine-flat.svg
 License: Licensed only for approved usage, see COPYING for details.
 Provides: redhat-logos = %{version}-%{_release}
