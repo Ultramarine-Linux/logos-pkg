@@ -5,7 +5,7 @@ Name: ultramarine-logos
 Summary: Icons and pictures related to Ultramarine Linux
 Version: 36
 %define _release 2%{?dist}
-Release: %autorelease
+Release: 2%{?dist}
 URL: https://gitlab.ultramarine-linux.org/design/logos
 Source0: https://github.com/Ultramarine-Linux/logos-src/archive/refs/heads/lapis.tar.gz
 Source1: distributor-logo-ultramarine-flat.svg
