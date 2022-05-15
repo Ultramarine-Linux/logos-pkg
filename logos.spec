@@ -56,7 +56,7 @@ BuildArch: noarch
 Ultramarine Linux assets to complement the whitesur-icon-theme package
 
 %prep
-%setup -qn logos-lapis
+%setup -qn logos-src-lapis
  
 %build
  
