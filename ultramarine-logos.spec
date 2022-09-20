@@ -1,23 +1,23 @@
 %define _disable_source_fetch 0
 
-Name: ultramarine-logos
-%define _alt_name fedora-logos
-Summary: Icons and pictures related to Ultramarine Linux
-Version: 36
-%define _release 2%{?dist}
-Release: 2%{?dist}
-URL: https://gitlab.ultramarine-linux.org/design/logos
-Source0: https://github.com/Ultramarine-Linux/logos-src/archive/refs/heads/lapis.tar.gz
-Source1: distributor-logo-ultramarine-flat.svg
-License: Licensed only for approved usage, see COPYING for details.
-Provides: redhat-logos = %{version}-%{_release}
-Provides: gnome-logos = %{version}-%{_release}
-Provides: system-logos = %{version}-%{_release}
-Provides: %{_alt_name} = %{version}-%{_release}
-BuildArch: noarch
+Name:          ultramarine-logos
+%define        _alt_name fedora-logos
+Summary:       Icons and pictures related to Ultramarine Linux
+Version:       37
+%define        _release 2%{?dist}
+Release:       2%{?dist}
+URL:           https://github.com/Ultramarine-Linux/logos-src
+Source0:       https://github.com/Ultramarine-Linux/logos-src/archive/refs/heads/lapis.zip
+Source1:       distributor-logo-ultramarine-flat.svg
+License:       Licensed only for approved usage, see COPYING for details.
+Provides:      redhat-logos = %{version}-%{_release}
+Provides:      gnome-logos = %{version}-%{_release}
+Provides:      system-logos = %{version}-%{_release}
+Provides:      %{_alt_name} = %{version}-%{_release}
+BuildArch:     noarch
 BuildRequires: hardlink
-Requires: ultramarine-release = %{version}
- 
+Requires:      ultramarine-release = %{version}
+
 %if ! 0%{?eln}
 # For _kde4_* macros:
 BuildRequires:	kde-filesystem
@@ -26,7 +26,7 @@ BuildRequires:	kde-filesystem
 %description
 See the included COPYING file for full information on copying and
 redistribution of this package and its contents.
- 
+
 %package httpd
 Summary: Assets used by httpd that are related to Ultramarine Linux
 Provides:	system-logos-httpd = %{version}-%{_release}
